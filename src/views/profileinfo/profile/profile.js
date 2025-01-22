@@ -76,6 +76,37 @@ export default function EditProfile() {
 
   const handleSaveChanges = async () => {
     console.log("called")
+
+
+    // setIsLoading(true);
+
+    // const data = new FormData();
+    // data.append("profileImage", profileImage);
+    // data.append("businessName", formData.businessName);
+    // data.append("phoneNumber", formData.phoneNumber);
+    // data.append("gstin", formData.gstin);
+    // data.append("email", formData.email);
+    // data.append("businessType", formData.businessType);
+    // data.append("businessCategory", formData.businessCategory);
+    // data.append("state", formData.state);
+    // data.append("pincode", formData.pincode);
+    // data.append("businessAddress", formData.businessAddress);
+
+
+    // try {
+    //   const response = await axios.post("http://localhost:4000/api/saveProfile", data, {
+    //     headers: {
+    //       "Content-Type": "multipart/form-data",
+    //     },
+    //   });
+    //   console.log("Profile updated successfully:", response.data);
+    // } catch (error) {
+    //   console.error("Error updating profile:", error);
+    // } finally {
+    //   setIsLoading(false);
+    // }
+
+    //second
    
     
     setIsLoading(true);
