@@ -33,7 +33,8 @@ export default function EditProfile() {
   const [isLoading, setIsLoading] = useState(false);
   const fetchProfileData = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/api/getProfile");
+      // const response = await axios.get("http://localhost:4000/api/getProfile");
+      const response = await axios.get("https://mst-assignment-api.vercel.app/api/getProfile");
       const data = response.data;
       setFormData({
         businessName: data.businessName || "",
@@ -126,7 +127,7 @@ export default function EditProfile() {
 
       console.log("called_2") 
   
-      const response = await axios.put(`http://localhost:4000/api/updateProfile/${formData.userid}`, data, {
+      const response = await axios.put(`https://mst-assignment-api.vercel.app/api/updateProfile/${formData.userid}`, data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
